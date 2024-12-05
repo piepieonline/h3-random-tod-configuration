@@ -1,6 +1,7 @@
 export const currentFileVersion = 1;
 
 export const brickToName = {
+    "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick": "Vanilla",
     "assembly:/_pro/scenes/missions/sheep/scene_sheep.entity": "sheep",
     "assembly:/_pro/scenes/missions/sheep/tod_twilight.brick": "sheep/tod_twilight",
     "assembly:/_pro/scenes/missions/golden/mission_gecko/scene_gecko_basic.entity": "golden",
