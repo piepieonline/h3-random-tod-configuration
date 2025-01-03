@@ -44,7 +44,7 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/golden/mission_gecko/midday_gecko.brick": "Midday",
     "assembly:/_pro/scenes/missions/ancestral/scene_bulldog.entity": "Dartmoor",
     "assembly:/_pro/scenes/missions/ancestral/tod_night.brick": "Night",
-    "assembly:/_pro/scenes/missions/ancestral/tod_midday.brick": "Midday"
+    "assembly:/_pro/scenes/missions/ancestral/tod_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/scene_fox_basic.entity": "Berlin",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/variant_easter.brick": "Easter Event",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_midday.brick": "Midday",
