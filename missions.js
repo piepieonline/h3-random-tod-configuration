@@ -17,7 +17,7 @@ export const missions = {
     "assembly:/_pro/scenes/missions/bangkok/tod_midday.brick",
     "assembly:/_pro/scenes/missions/bangkok/tod_zika_night.brick"
   ],
-  "assembly:/_pro/scenes/missions/colorado_2/_scene_bull.entity": [
+  "assembly:/_pro/scenes/missions/colorado_2/_scene_mission_bull.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/colorado_2/lighting_night.brick",
     "assembly:/_pro/scenes/missions/colorado_2/lighting_day.brick"
