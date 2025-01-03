@@ -102,8 +102,22 @@ export const missions = {
     "assembly:/_PRO/Scenes/Missions/Rocky/tod_midday.brick",
     "assembly:/_PRO/Scenes/Missions/Rocky/tod_sunset.brick"
   ]
-}
+};
+
+export const missionAliases = {
+  "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": [
+    "assembly:/_PRO/Scenes/Missions/Paris/_scene_paris.entity"
+  ],
+  "assembly:/_PRO/Scenes/missions/Wet/scene_rat_basic.entity": [
+    "assembly:/_PRO/Scenes/missions/Wet/scene_wet_makoyana.entity",
+    "assembly:/_PRO/Scenes/missions/Wet/scene_rat_ginseng.entity",
+    "assembly:/_PRO/Scenes/Missions/Wet/scene_Wet_azalea.entity",
+    "assembly:/_PRO/Scenes/missions/Wet/scene_magnolia.entity",
+    "assembly:/_PRO/scenes/missions/wet/scene_rat_elusive_redsnapper.entity",
+    "assembly:/_pro/scenes/missions/wet/scene_wet_lambic.entity"
+  ],
+};
 
 export const offbydefault = [
 
-]
+];

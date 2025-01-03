@@ -1,5 +1,5 @@
 (async () => {
-    const { missions, offbydefault } = await import("./missions.js");
+    const { missions, missionAliases, offbydefault } = await import("./missions.js");
     const { currentFileVersion, brickToName, brickToVersion, brickToImage, displayOrder } = await import("./friendlyNames.js");
 
     let configFileVersion = currentFileVersion;
@@ -20,6 +20,7 @@
         let missionId = encodeForHtmlId(mission);
 
         if(!brickToName[mission]) console.warn(`Missing mission title: ${mission}`);
+        if(!missions[mission]) { console.error(`Missing mission: ${mission}`); return; };
 
         let currentMissionHtmlToAdd = `<div id=${missionId} class="accordion-item">
                         <div class="accordion-header" id="heading${missionIndex}">
@@ -31,8 +32,8 @@
         selectedMissions[mission] = {};
 
         missions[mission].forEach((brick, brickIndex) => {
+            brick = brick.toLowerCase()
             const isEnabled = !offbydefault.includes(brick);
-
             if(!brickToName[brick]) console.warn(`Missing brick title: ${brick}`);
 
             const isNewBrick = brickToVersion[brick] == currentFileVersion;
@@ -68,6 +69,8 @@
         document.getElementById(`${missionId}-selected-counter`).innerText = Object.values(selectedMissions[mission]).filter(val => val).length;
     };
 
+    /*
+    // Not working or used currently
     window.generatePeacock = () => {
         var missionJson = {};
         Object.keys(selectedMissions).forEach(mission => {
@@ -82,6 +85,7 @@
 
         downloadObjectAsJson(missionJson, 'FreelancerVariationMissions');
     };
+    */
 
     window.generateOnline = () => {
         var missionJson = {
@@ -90,16 +94,28 @@
         };
 
         Object.keys(selectedMissions).forEach(mission => {
-            missionJson.patches.push({
+            let missionPatch = {
                 "scenePath": mission,
                 "bricks": []
-            });
+            };
+            
             Object.keys(selectedMissions[mission]).forEach(brick => {
                 if(selectedMissions[mission][brick])
                 {
-                    missionJson.patches[missionJson.patches.length - 1].bricks.push(brick);
+                    missionPatch.bricks.push(brick);
                 }
             });
+
+            missionJson.patches.push(missionPatch);
+
+            if(missionAliases[mission]) {
+                // Some levels use different scenes for different things - think campaign vs escalations, etc
+                missionAliases[mission].forEach(altScene => {
+                    let missionAliasPatch = structuredClone(missionPatch);
+                    missionAliasPatch.scenePath = altScene;
+                    missionJson.patches.push(missionAliasPatch);
+                });
+            };
         });
 
         downloadObjectAsJson(missionJson, 'RandomTOD');

@@ -32,18 +32,7 @@ export const brickToName = {
   };
 
 export const brickToVersion = {
-    "assembly:/_pro/scenes/missions/sheep/tod_twilight.brick": 1,
-    "assembly:/_pro/scenes/missions/golden/mission_gecko/midday_gecko.brick": 1,
-    "assembly:/_pro/scenes/missions/edgy/mission_fox/variant_easter.brick": 1,
-    "assembly:/_pro/scenes/missions/miami/tod_sunset.brick": 1,
-    "assembly:/_pro/scenes/missions/paris/tod_midday.brick": 1,
-    "assembly:/_pro/scenes/missions/greedy/mission_raccoon/raccoon_midday.brick": 1,
-    "assembly:/_pro/scenes/missions/skunk/tod_sunset.brick": 1,
-    "assembly:/_pro/scenes/missions/theark/tod_midday.brick": 1,
-    "assembly:/_pro/scenes/missions/mumbai/tod_night.brick": 1,
-    "assembly:/_pro/scenes/missions/elegant/tod_midday.brick": 1,
-    "assembly:/_pro/scenes/missions/colorado_2/lighting_night.brick": 1,
-    "assembly:/_pro/scenes/missions/ancestral/tod_night.brick": 1
+
 };
 
 export const brickToImage = {
