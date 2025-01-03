@@ -3,26 +3,26 @@ export const missions = {
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/paris/tod_midday.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/CoastalTown/_scene_octopus.entity": [
+  "assembly:/_pro/scenes/missions/coastaltown/_scene_octopus.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/coastaltown/tod_wot_sunset.brick",
     "assembly:/_pro/scenes/missions/coastaltown/tod_ebola_night.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/Marrakesh/_scene_spider.entity": [
+  "assembly:/_pro/scenes/missions/marrakesh/_scene_spider.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/marrakesh/gilded_tod_summer_night_clear.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/Bangkok/_scene_tiger.entity": [
+  "assembly:/_pro/scenes/missions/bangkok/_scene_tiger.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/bangkok/tod_midday.brick",
     "assembly:/_pro/scenes/missions/bangkok/tod_zika_night.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/Colorado_2/_scene_bull.entity": [
+  "assembly:/_pro/scenes/missions/colorado_2/_scene_bull.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/colorado_2/lighting_night.brick",
     "assembly:/_pro/scenes/missions/colorado_2/lighting_day.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/Hokkaido/_Scene_Mission_SnowCrane.entity": [
+  "assembly:/_pro/scenes/missions/hokkaido/_scene_mission_snowcrane.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/hokkaido/tod_flu.brick",
     "assembly:/_pro/scenes/missions/hokkaido/tod_bluenight.brick"
@@ -38,7 +38,7 @@ export const missions = {
     "assembly:/_pro/scenes/missions/miami/tod_sunset.brick",
     "assembly:/_pro/scenes/missions/miami/tod_night.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/Colombia/scene_hippo.entity": [
+  "assembly:/_pro/scenes/missions/colombia/scene_hippo.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/colombia/tod_night.brick"
   ],
@@ -84,7 +84,7 @@ export const missions = {
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_midday.brick",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_sunset.brick"
   ],
-  "assembly:/_PRO/Scenes/missions/Wet/scene_rat_basic.entity": [
+  "assembly:/_pro/scenes/missions/wet/scene_rat_basic.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/wet/tod_midday.brick",
     "assembly:/_pro/scenes/missions/wet/tod_cloudy.brick"
@@ -93,27 +93,27 @@ export const missions = {
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/elegant/tod_midday.brick"
   ],
-  "assembly:/_PRO/Scenes/Missions/trapped/scene_wolverine.entity": [
+  "assembly:/_pro/scenes/missions/trapped/scene_wolverine.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     ""
   ],
-  "assembly:/_PRO/Scenes/Missions/Rocky/scene_dugong.entity": [
+  "assembly:/_pro/scenes/missions/rocky/scene_dugong.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
-    "assembly:/_PRO/Scenes/Missions/Rocky/tod_midday.brick",
-    "assembly:/_PRO/Scenes/Missions/Rocky/tod_sunset.brick"
+    "assembly:/_pro/scenes/missions/rocky/tod_midday.brick",
+    "assembly:/_pro/scenes/missions/rocky/tod_sunset.brick"
   ]
 };
 
 export const missionAliases = {
   "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": [
-    "assembly:/_PRO/Scenes/Missions/Paris/_scene_paris.entity"
+    "assembly:/_pro/scenes/missions/paris/_scene_paris.entity"
   ],
-  "assembly:/_PRO/Scenes/missions/Wet/scene_rat_basic.entity": [
-    "assembly:/_PRO/Scenes/missions/Wet/scene_wet_makoyana.entity",
-    "assembly:/_PRO/Scenes/missions/Wet/scene_rat_ginseng.entity",
-    "assembly:/_PRO/Scenes/Missions/Wet/scene_Wet_azalea.entity",
-    "assembly:/_PRO/Scenes/missions/Wet/scene_magnolia.entity",
-    "assembly:/_PRO/scenes/missions/wet/scene_rat_elusive_redsnapper.entity",
+  "assembly:/_pro/scenes/missions/wet/scene_rat_basic.entity": [
+    "assembly:/_pro/scenes/missions/wet/scene_wet_makoyana.entity",
+    "assembly:/_pro/scenes/missions/wet/scene_rat_ginseng.entity",
+    "assembly:/_pro/scenes/missions/wet/scene_wet_azalea.entity",
+    "assembly:/_pro/scenes/missions/wet/scene_magnolia.entity",
+    "assembly:/_pro/scenes/missions/wet/scene_rat_elusive_redsnapper.entity",
     "assembly:/_pro/scenes/missions/wet/scene_wet_lambic.entity"
   ],
 };
