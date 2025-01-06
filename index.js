@@ -48,7 +48,7 @@
                     <div class="accordion-body">
                         <div class="form-check form-switch">
                             <input class="form-check-input variant-checkbox mission-${missionId}" type="checkbox" role="switch" id="${missionId}|${brick}" ${isEnabled ? 'checked' : ''} onchange="modifySelection('${missionId}', '${mission}', '${brick}')">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">${brickToName[brick]}${brickToName[brick] == 'Vanilla' ? '' : `<span style="color: grey">(${brick})</span>` } </label>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">${brickToName[brick]}${brickToName[brick] == 'Vanilla' ? '' : `&nbsp;<span style="color: grey">(${brick})</span>` } </label>
                             <span id="${missionId}|${brick}|new" class="badge rounded-pill bg-success" style="display:${(isNewBrick ? 'initial' : 'none')};">New</span>
                         </div>
                     </div>
