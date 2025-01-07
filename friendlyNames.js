@@ -60,7 +60,7 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_sunset.brick": "Sunset",
     "assembly:/_pro/scenes/missions/wet/scene_rat_basic.entity": "Chongqing",
     "assembly:/_pro/scenes/missions/wet/tod_midday.brick": "Midday",
-    "assembly:/_pro/scenes/missions/wet/tod_cloudy.brick": "Cloudy Day",
+    "assembly:/_pro/scenes/missions/wet/tod_cloudy_day.brick": "Cloudy Day",
     "assembly:/_pro/scenes/missions/elegant/scene_llama.entity": "Mendoza",
     "assembly:/_pro/scenes/missions/elegant/tod_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/trapped/scene_wolverine.entity": "Romania",
