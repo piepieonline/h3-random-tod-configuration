@@ -98,7 +98,7 @@ export const missions = {
   "assembly:/_pro/scenes/missions/wet/scene_rat_basic.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/wet/tod_midday.brick",
-    "assembly:/_pro/scenes/missions/wet/tod_cloudy.brick"
+    "assembly:/_pro/scenes/missions/wet/tod_cloudy_day.brick"
   ],
   "assembly:/_pro/scenes/missions/elegant/scene_llama.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
