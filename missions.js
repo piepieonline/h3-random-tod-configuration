@@ -146,7 +146,7 @@ export const missionAliases = {
   ],
    "assembly:/_pro/scenes/missions/sheep/scene_sheep.entity": [
     "assembly:/_pro/scenes/missions/sheep/scene_opuntia.entity",
-    "assembly:/_pro/scenes/missions/sheep/scene_adonis.entity
+    "assembly:/_pro/scenes/missions/sheep/scene_adonis.entity"
   ],
    "assembly:/_pro/scenes/missions/miami/scene_flamingo.entity": [
     "assembly:/_pro/scenes/missions/miami/scene_cottonmouth.entity",
