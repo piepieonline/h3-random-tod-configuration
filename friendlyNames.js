@@ -3,7 +3,7 @@ export const currentFileVersion = 1;
 export const brickToName = {
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick": "Vanilla",
     "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": "Paris",
-    "assembly:/_pro/scenes/missions/paris/tod_midday.brick": "Midday",
+    "assembly:/_pro/scenes/missions/paris/tod_paris_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/paris/tod_night.brick": "Night",
     "assembly:/_pro/scenes/missions/paris/location_parisnoel.brick": "Christmas",
     "assembly:/_pro/scenes/missions/coastaltown/_scene_octopus.entity": "Sapienza - World of Tomorrow",
