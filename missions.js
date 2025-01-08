@@ -194,6 +194,8 @@ export const missionAliases = {
     "assembly:/_PRO/Scenes/Missions/Edgy/mission_fox/scene_fox_contractcreation.entity",
     "assembly:/_PRO/Scenes/Missions/Edgy/mission_fox/scene_fox_NightPhlox.entity",
     "assembly:/_PRO/Scenes/Missions/Edgy/mission_fox/scene_fox_smilax.entity",
+    "assembly:/_pro/scenes/missions/edgy/mission_fox/scene_fox_smilax_level2.entity",
+    "assembly:/_pro/scenes/missions/edgy/mission_fox/scene_fox_smilax_level3.entity",
     "assembly:/_PRO/Scenes/Missions/Edgy/mission_fox/scene_fox_cornflower.entity",
     "assembly:/_PRO/Scenes/Missions/Edgy/mission_fox/scene_ambrosia.entity",
     "assembly:/_PRO/Scenes/Missions/Edgy/mission_fox/scene_radler.entity",
