@@ -91,7 +91,7 @@ export const missions = {
   ],
    "assembly:/_pro/scenes/missions/ancestral/scene_smoothsnake.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
-    "assembly:/_pro/scenes/missions/ancestral/night_garden_show_tod.brick"
+    "assembly:/_pro/scenes/missions/ancestral/tod_night_garden_show.brick"
   ],
   "assembly:/_pro/scenes/missions/edgy/mission_fox/scene_fox_basic.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
