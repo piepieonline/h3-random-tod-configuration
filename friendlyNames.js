@@ -55,7 +55,7 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/ancestral/tod_night.brick": "Night",
     "assembly:/_pro/scenes/missions/ancestral/tod_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/ancestral/scene_smoothsnake.entity": "Dartmoor - Garden Show",
-    "assembly:/_pro/scenes/missions/ancestral/night_garden_show_tod.brick": "Night",
+    "assembly:/_pro/scenes/missions/ancestral/tod_night_garden_show.brick": "Night",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/scene_fox_basic.entity": "Berlin",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_easter.brick": "Easter Event",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_midday.brick": "Midday",
