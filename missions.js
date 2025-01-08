@@ -91,7 +91,7 @@ export const missions = {
   ],
   "assembly:/_pro/scenes/missions/edgy/mission_fox/scene_fox_basic.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
-    "assembly:/_pro/scenes/missions/edgy/mission_fox/variant_easter.brick",
+    "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_easter.brick",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_midday.brick",
     "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_berlin_sunset.brick"
   ],
