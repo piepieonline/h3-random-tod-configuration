@@ -66,8 +66,8 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/trapped/scene_wolverine.entity": "Romania",
     "assembly:/_pro/scenes/missions/trapped/tod_day.brick": "Midday",
     "assembly:/_pro/scenes/missions/rocky/scene_dugong.entity": "Ambrose Island",
-    "assembly:/_pro/scenes/missions/rocky/tod_midday.brick": "Midday",
-    "assembly:/_pro/scenes/missions/rocky/tod_sunset.brick": "Sunset"
+    "assembly:/_pro/scenes/missions/rocky/tod_ambrose_midday.brick": "Midday",
+    "assembly:/_pro/scenes/missions/rocky/tod_ambrose_sunset.brick": "Sunset"
   };
 
 export const brickToVersion = {
