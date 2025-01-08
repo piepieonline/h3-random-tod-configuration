@@ -110,8 +110,8 @@ export const missions = {
   ],
   "assembly:/_pro/scenes/missions/rocky/scene_dugong.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
-    "assembly:/_pro/scenes/missions/rocky/tod_midday.brick",
-    "assembly:/_pro/scenes/missions/rocky/tod_sunset.brick"
+    "assembly:/_pro/scenes/missions/rocky/tod_ambrose_midday.brick",
+    "assembly:/_pro/scenes/missions/rocky/tod_ambrose_sunset.brick"
   ]
 };
 
