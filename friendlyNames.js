@@ -13,7 +13,7 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/coastaltown/tod_day_landslide.brick": "Summer Day (2016)",
     "assembly:/_pro/scenes/missions/marrakesh/_scene_spider.entity": "Marrakesh - A Gilded Cage",
     "assembly:/_pro/scenes/missions/marrakesh/gilded_tod_summer_night_clear.brick": "Night",
-    "assembly:/_pro/scenes/missions/marrakesh/lighting_dusk.brick": "Dusk",
+    "assembly:/_pro/scenes/missions/marrakesh/lighting_dusk.brick": "Sunset",
     "assembly:/_pro/scenes/missions/marrakesh/_scene_python.entity": "Marrakesh - A House Built On Sand",
     "assembly:/_pro/scenes/missions/marrakesh/tod_ahbos_day.brick": "Midday",
     "assembly:/_pro/scenes/missions/bangkok/_scene_tiger.entity": "Bangkok - Club 27",
@@ -46,7 +46,7 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/salty/mission_seagull/scene_seagull.entity": "Hantu Port (Sniper Assassin)",
     "assembly:/_pro/scenes/missions/salty/mission_seagull/tod_rainy_night.brick": "Rainy Night",
     "assembly:/_pro/scenes/missions/greedy/mission_raccoon/scene_raccoon_basic.entity": "New York",
-    "assembly:/_pro/scenes/missions/greedy/mission_raccoon/raccoon_midday.brick": "Midday",
+    "assembly:/_pro/scenes/missions/greedy/mission_raccoon/tod_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/opulent/mission_stingray/scene_stingray_basic.entity": "Haven Island",
     "assembly:/_pro/scenes/missions/opulent/mission_stingray/tod_night.brick": "Night",
     "assembly:/_pro/scenes/missions/golden/mission_gecko/scene_gecko_basic.entity": "Dubai",
@@ -77,6 +77,23 @@ export const brickToVersion = {
 };
 
 export const brickToImage = {
+  "assembly:/_pro/scenes/missions/paris/tod_night.brick": "paris_night",
+  "assembly:/_pro/scenes/missions/bangkok/tod_midday.brick": "bangkok_midday",
+  "assembly:/_pro/scenes/missions/sheep/tod_sunset.brick": "tod_hb_sunset",
+  "assembly:/_pro/scenes/missions/colombia/tod_night.brick": "hippo_night",
+  "assembly:/_pro/scenes/missions/mumbai/tod_night.brick": "mumbai_night",
+  "assembly:/_pro/scenes/missions/mumbai/tod_midday.brick": "mumbai_midday",
+  "assembly:/_pro/scenes/missions/skunk/tod_sunset.brick": "wc_sunset",
+  "assembly:/_pro/scenes/missions/skunk/tod_night.brick": "wc_night",
+  "assembly:/_pro/scenes/missions/theark/tod_midday.brick": "sgail_midday",
+  "assembly:/_pro/scenes/missions/theark/tod_sunset.brick": "sgail_sunset",
+  "assembly:/_pro/scenes/missions/greedy/mission_raccoon/tod_midday.brick": "ny_midday",
+  "assembly:/_pro/scenes/missions/opulent/mission_stingray/tod_night.brick": "haven_night",
+  "assembly:/_pro/scenes/missions/ancestral/tod_night.brick": "dartmoor_night",
+  "assembly:/_pro/scenes/missions/ancestral/tod_midday.brick": "dartmoor_midday",
+  "assembly:/_pro/scenes/missions/edgy/mission_fox/tod_midday.brick": "berlin_midday",
+  "assembly:/_pro/scenes/missions/wet/tod_midday.brick": "chong_midday",
+  "assembly:/_pro/scenes/missions/elegant/tod_midday.brick": "mendoza_midday"
 };
 
 export const displayOrder = [

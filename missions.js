@@ -74,7 +74,7 @@ export const missions = {
   ],
   "assembly:/_pro/scenes/missions/greedy/mission_raccoon/scene_raccoon_basic.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
-    "assembly:/_pro/scenes/missions/greedy/mission_raccoon/raccoon_midday.brick"
+    "assembly:/_pro/scenes/missions/greedy/mission_raccoon/tod_midday.brick"
   ],
   "assembly:/_pro/scenes/missions/opulent/mission_stingray/scene_stingray_basic.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
