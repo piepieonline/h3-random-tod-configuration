@@ -162,7 +162,6 @@ export const missionAliases = {
      "assembly:/_pro/scenes/missions/colombia/scene_hippo_rafflesia.entity"
   ],
    "assembly:/_pro/scenes/missions/mumbai/scene_mongoose.entity": [
-    "assembly:/_pro/scenes/missions/mumbai/scene_kingcobra.entity",
      "assembly:/_pro/scenes/missions/mumbai/_scene_mongoose_ashoka.entity"
   ],
    "assembly:/_pro/scenes/missions/skunk/scene_skunk.entity": [
