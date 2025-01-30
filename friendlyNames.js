@@ -1,7 +1,9 @@
-export const currentFileVersion = 1;
+export const currentFileVersion = 1.1;
 
 export const brickToName = {
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick": "Vanilla",
+    "assembly:/_pro/scenes/missions/thefacility/_scene_mission_yacht.entity": "Real Yacht (External Mod Required)",
+    "assembly:/_pro/scenes/missions/miami/tod_night_yacht.brick": "Night",
     "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": "Paris",
     "assembly:/_pro/scenes/missions/paris/tod_paris_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/paris/tod_night.brick": "Night",
@@ -73,7 +75,7 @@ export const brickToName = {
   };
 
 export const brickToVersion = {
-
+"assembly:/_pro/scenes/missions/thefacility/_scene_mission_yacht.entity|assembly:/_pro/scenes/missions/miami/tod_night_yacht.brick": 1.1
 };
 
 export const brickToImage = {
@@ -97,6 +99,7 @@ export const brickToImage = {
 };
 
 export const displayOrder = [
+    "assembly:/_pro/scenes/missions/thefacility/_scene_mission_yacht.entity",  
     "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity",
     "assembly:/_pro/scenes/missions/coastaltown/_scene_octopus.entity",
     "assembly:/_pro/scenes/missions/coastaltown/_scene_mission_mamba.entity",

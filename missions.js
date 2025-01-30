@@ -1,4 +1,8 @@
 export const missions = {
+  "assembly:/_pro/scenes/missions/thefacility/_scene_mission_yacht.entity": [
+    "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
+    "assembly:/_pro/scenes/missions/miami/tod_night_yacht.brick"
+  ],
   "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/paris/tod_paris_midday.brick",
@@ -120,6 +124,9 @@ export const missions = {
 };
 
 export const missionAliases = {
+  "assembly:/_pro/scenes/missions/thefacility/_scene_mission_yacht.entity": [
+    "assembly:/_pro/scenes/missions/thefacility/_scene_mission_yacht_escalation.entity"
+  ],
   "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": [
     "assembly:/_pro/scenes/missions/paris/_scene_paris.entity",
     "assembly:/_pro/scenes/missions/paris/_scene_paris_torenia.entity"
