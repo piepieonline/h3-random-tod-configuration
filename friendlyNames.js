@@ -36,7 +36,7 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/miami/tod_night.brick": "Night",
     "assembly:/_pro/scenes/missions/colombia/scene_hippo.entity": "Santa Fortuna",
     "assembly:/_pro/scenes/missions/colombia/tod_night.brick": "Night",
-    "assembly:/_pro/scenes/missions/mumbai/scene_mongoose.entity": "Mumbai",
+    "assembly:/_pro/scenes/missions/mumbai/scene_mongoose.entity": "Mumbai - Chasing A Ghost",
     "assembly:/_pro/scenes/missions/mumbai/tod_night.brick": "Night",
     "assembly:/_pro/scenes/missions/mumbai/tod_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/skunk/scene_skunk.entity": "Whittleton Creek",

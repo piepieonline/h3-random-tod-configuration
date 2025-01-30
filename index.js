@@ -172,7 +172,7 @@
 
     window.movePreviewImage = (e) => {
         document.getElementById('preview-image-popover').style.left = Math.max(200, e.pageX) + 'px';
-        document.getElementById('preview-image-popover').style.top = (e.pageY + 10) + 'px';
+        document.getElementById('preview-image-popover').style.top = (((e.pageY + 225) > (window.innerHeight + window.scrollY)) ? (e.pageY - 225 - 10) : (e.pageY + 10)) + 'px';
     }
 
     window.hidePreviewImage = () => {
