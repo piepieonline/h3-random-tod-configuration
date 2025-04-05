@@ -18,25 +18,26 @@
     let htmlToAdd = `<div class="accordion" id="mission-accordion">`;
     displayOrder.forEach((mission, missionIndex) => {
         let missionId = encodeForHtmlId(mission);
-
+        
         if(!brickToName[mission]) console.warn(`Missing mission title: ${mission}`);
         if(!missions[mission]) { console.error(`Missing mission: ${mission}`); return; };
-
+        
         let currentMissionHtmlToAdd = `<div id=${missionId} class="accordion-item">
-                        <div class="accordion-header" id="heading${missionIndex}">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${missionIndex}" aria-expanded="true" aria-controls="collapse${missionIndex}">
-                                ${brickToName[mission]}&nbsp;<span id="${missionId}-selected-counter">${missions[mission].filter(brick => !offbydefault.includes(brick)).length}</span>/${missions[mission].length}&nbsp;&nbsp;&nbsp;<span style="color: grey">${mission}</span><span id="${missionId}|new" class="badge rounded-pill bg-success new-hidden" style="margin-left: 5px">New</span>
-                            </button>
-                        </div>`;
-
+        <div class="accordion-header" id="heading${missionIndex}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${missionIndex}" aria-expanded="true" aria-controls="collapse${missionIndex}">
+        ${brickToName[mission]}&nbsp;<span id="${missionId}-selected-counter">${missions[mission].filter(brick => !offbydefault.includes(brick)).length}</span>/${missions[mission].length}&nbsp;&nbsp;&nbsp;<span style="color: grey">${mission}</span><span id="${missionId}|new" class="badge rounded-pill bg-success new-hidden" style="margin-left: 5px">New</span>
+        </button>
+        </div>`;
+        
         selectedMissions[mission] = {};
-
+        
         missions[mission].forEach((brick, brickIndex) => {
             brick = brick.toLowerCase()
+            let brickId = encodeForHtmlId(brick);
             const isEnabled = !offbydefault.includes(brick);
             if(!brickToName[brick]) console.warn(`Missing brick title: ${brick}`);
 
-            const isNewBrick = brickToVersion[brick] == currentFileVersion;
+            const isNewBrick = brickToVersion[`${mission}|${brick}`] == currentFileVersion;
             
             if(isNewBrick)
             {
@@ -47,9 +48,9 @@
                 `<div id="collapse${missionIndex}" class="accordion-collapse collapse" aria-labelledby="heading${missionIndex}" onmouseenter="showPreviewImage('${brick}')" onmousemove="movePreviewImage(event)" onmouseleave="hidePreviewImage()">
                     <div class="accordion-body">
                         <div class="form-check form-switch">
-                            <input class="form-check-input variant-checkbox mission-${missionId}" type="checkbox" role="switch" id="${missionId}|${brick}" ${isEnabled ? 'checked' : ''} onchange="modifySelection('${missionId}', '${mission}', '${brick}')">
+                            <input class="form-check-input variant-checkbox mission-${missionId}" type="checkbox" role="switch" id="${missionId}|${brickId}" x-brick-path="${brick}" ${isEnabled ? 'checked' : ''} onchange="modifySelection('${missionId}', '${mission}', '${brick}')">
                             <label class="form-check-label" for="flexSwitchCheckChecked">${brickToName[brick]}${brickToName[brick] == 'Vanilla' ? '' : `&nbsp;<span style="color: grey">(${brick})</span>` } </label>
-                            <span id="${missionId}|${brick}|new" class="badge rounded-pill bg-success" style="display:${(isNewBrick ? 'initial' : 'none')};">New</span>
+                            <span id="${missionId}|${brickId}|new" class="badge rounded-pill bg-success" style="display:${(isNewBrick ? 'initial' : 'none')};">New</span>
                         </div>
                     </div>
                 </div>`;
@@ -65,7 +66,8 @@
     radioParent.insertAdjacentHTML('beforeend', htmlToAdd);
 
     window.modifySelection = (missionId, mission, brick) => {
-        selectedMissions[mission][brick] = document.getElementById(`${missionId}|${brick}`).checked;
+        let brickId = encodeForHtmlId(brick);
+        selectedMissions[mission][brick] = document.getElementById(`${missionId}|${brickId}`).checked;
         document.getElementById(`${missionId}-selected-counter`).innerText = Object.values(selectedMissions[mission]).filter(val => val).length;
     };
 
@@ -122,24 +124,24 @@
     };
     
     window.loadExisting = (e) => {
-        var fr = new FileReader();
+        let fr = new FileReader();
 
         fr.onload = function(e) {
-            var result = JSON.parse(e.target.result);
+            let result = JSON.parse(e.target.result);
 
-            var patches = result.patches;
+            let patches = result.patches;
             configFileVersion = result.configFileVersion;
 
-            var onCount = 0;
-            var offCount = 0;
+            let onCount = 0;
+            let offCount = 0;
 
             patches.forEach(mission => {
                 let missionId = encodeForHtmlId(mission.scenePath);
                 document.querySelectorAll(`.mission-${missionId}`).forEach(checkbox => {
-                    var brick = checkbox.id.split('|')[1];
-                    var isNew = brickToVersion[`${mission.scenePath}|${brick}`] > configFileVersion;
-
-                    var includeBrick = mission.bricks.includes(brick) || isNew;
+                    let brick = checkbox.getAttribute('x-brick-path').toLowerCase();
+                    let brickId = encodeForHtmlId(brick);
+                    let isNew = brickToVersion[`${mission.scenePath}|${brick}`] >= configFileVersion;
+                    let includeBrick = mission.bricks.includes(brick) || isNew;
 
                     checkbox.checked = includeBrick;
                     includeBrick ? onCount++ : offCount++;
@@ -149,7 +151,7 @@
                         document.getElementById(`${missionId}|new`).style.display = 'initial';
                     }
                     
-                    document.getElementById(`${missionId}|${brick}|new`).style.display = isNew ? 'initial' : 'none';
+                    document.getElementById(`${missionId}|${brickId}|new`).style.display = isNew ? 'initial' : 'none';
 
                     window.modifySelection(missionId, mission.scenePath, brick);
                 });
