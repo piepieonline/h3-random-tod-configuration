@@ -130,7 +130,8 @@ export const missionAliases = {
   ],
   "assembly:/_pro/scenes/missions/paris/_scene_fashionshowhit_01.entity": [
     "assembly:/_pro/scenes/missions/paris/_scene_paris.entity",
-    "assembly:/_pro/scenes/missions/paris/_scene_paris_torenia.entity"
+    "assembly:/_pro/scenes/missions/paris/_scene_paris_torenia.entity",
+    "assembly:/_PRO/Scenes/Missions/Paris/_scene_frenchmartini.entity"
   ],
    "assembly:/_pro/scenes/missions/coastaltown/_scene_octopus.entity": [
     "assembly:/_PRO/Scenes/Missions/CoastalTown/Mission01.entity"
