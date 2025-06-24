@@ -7,8 +7,7 @@ export const missions = {
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",
     "assembly:/_pro/scenes/missions/paris/tod_paris_midday.brick",
     "assembly:/_pro/scenes/missions/paris/tod_night.brick",
-    "assembly:/_PRO/Scenes/Missions/Paris/Location_parisnoel.brick",
-    "assembly:/_pro/scenes/missions/paris/lighting_newlook.brick"
+    "assembly:/_PRO/Scenes/Missions/Paris/Location_parisnoel.brick"
   ],
   "assembly:/_pro/scenes/missions/coastaltown/_scene_octopus.entity": [
     "assembly:/_pro/scenes/missions/thefacility/outfits_prologue.brick",

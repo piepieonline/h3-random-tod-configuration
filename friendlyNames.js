@@ -8,7 +8,6 @@ export const brickToName = {
     "assembly:/_pro/scenes/missions/paris/tod_paris_midday.brick": "Midday",
     "assembly:/_pro/scenes/missions/paris/tod_night.brick": "Night",
     "assembly:/_pro/scenes/missions/paris/location_parisnoel.brick": "Christmas",
-    "assembly:/_pro/scenes/missions/paris/lighting_newlook.brick": "Vanilla (GOTY Sunset)",
     "assembly:/_pro/scenes/missions/coastaltown/_scene_octopus.entity": "Sapienza - World of Tomorrow",
     "assembly:/_pro/scenes/missions/coastaltown/tod_wot_sunset.brick": "Sunset",
     "assembly:/_pro/scenes/missions/coastaltown/tod_ebola_night.brick": "Night",
